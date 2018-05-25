@@ -1,3 +1,9 @@
+/*
+@font-face {
+    font-family: Hacked;
+    src: url(https://hackedfont.com/HACKED.ttf);
+}
+*/
 * {
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
@@ -92,7 +98,7 @@ a {
 /* -------------->> 1 sekcja <<----------------------*/
 
 .bg-1 {
-    background-image: url(take_action_app_on_iphone_x_3.jpg);
+    background-image: url(iphone.jpg);
     background-size: cover;
     height: 90vh;
     margin: 0;
@@ -109,6 +115,7 @@ a {
 .bg-1 h3 {
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 3px #000; 
 }
 
 .bg-1 p {
@@ -268,25 +275,6 @@ footer h3{
     margin: 0;
     color: #dbdbdb;
     font-family: 'Montserrat', sans-serif;
-}
-row{
-    background-color: rgb(0,0,0, 0.4);
-    padding-left: 5px;
-    padding-right: 5px;
-
-    display: grid;
-    place-items: center;
-}
-footer input{
-    background-color: #dbdbdb;
-    width: 80%;
-    height: 40px;
-    border-radius: 15px;
-    
-    
-}
-footer button{
-    width: 50%;
 }
 
 
