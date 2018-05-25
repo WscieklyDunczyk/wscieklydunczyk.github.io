@@ -1,0 +1,348 @@
+* {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    background-color: #eee;
+    margin: 0;
+}
+
+/* -------------->> navbar <<--------------------- */
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    z-index: 9999;
+    background-color: #fff;
+    transition: 1s;
+    color: #000;
+}
+
+.scroll {
+    background-color: rgb(0, 0, 0, 0.8);
+    transition: 1s;
+    padding: 10px;
+    color: #fff;
+
+}
+
+.navbar-left {
+    font-weight: 600;
+    letter-spacing: 4px;
+    padding: 1px;
+    float: left;
+    cursor: default;
+}
+
+.navbar-left-color {
+    color: #fff;
+}
+
+.navbar-right {
+    float: right;
+}
+.navbar-right i{
+    display: none;
+     transition: all 2s linear;
+}
+.navbar-right ul {
+    list-style: none;
+    display: flex;
+     transition: all 2s linear;
+}
+
+.navbar-right ul li {
+    margin-right: 25px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.navbar-right ul li a {
+    transition: 0.3s;
+    padding: 10px;
+    animation: ease;
+    text-transform: uppercase;
+}
+
+a {
+    color: #000;
+}
+
+.a-color {
+    color: #fff;
+}
+
+.navbar-right ul li a:hover {
+    transition: 0.4s;
+    color: #fff;
+    background-color: Tomato;
+    border-radius: 30px;
+    animation: ease;
+}
+
+/* -------------->> 1 sekcja <<----------------------*/
+
+.bg-1 {
+    background-image: url(take_action_app_on_iphone_x_3.jpg);
+    background-size: cover;
+    height: 90vh;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #eee;
+    background-attachment: fixed;
+    cursor: default;
+}
+
+.bg-1 h3 {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-1 p {
+    text-transform: uppercase;
+    font-size: 2em;
+    text-shadow: 2px 2px 3px #000;
+    letter-spacing: 10px;
+}
+
+/* -------------->> 2 sekcja <<----------------------*/
+
+.bg-2 {
+    cursor: default;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    transition: 1s;
+}
+
+
+.flex-item {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 50px;
+    text-align: center;
+    max-width: 700px;
+    transition: 1s;
+}
+
+.flex-item h3 {
+    color: grey;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.flex-item p {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    text-align: center;
+    line-height: 25px;
+}
+.flex-item h1{
+    text-shadow: 1px 1px 10px grey;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #333;
+    margin-top: 100px;
+}
+section {
+    background-color: #eee;
+    margin: 0;
+    text-align: center;
+}
+
+section h1 {
+    text-shadow: 1px 1px 10px grey;
+    font-family: 'Pacifico', cursive;
+    font-size: 5em;
+    color: #333;
+    margin-top: 150px;
+    text-align: center;
+}
+/* -------------->> ikony <<----------------------*/
+.box{
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.icon{
+    
+    margin: 30px;
+    display: inline-block;
+    width: 100px;
+}
+i{transition: 0.5s;}
+.box a i:hover{
+    transform: scale(1.5,1.5);
+    transition: 0.5s;
+}
+.html{color: Tomato;}
+.css{color: dodgerblue;}
+.js{color: #EDCF35;}
+.github{color: #333;}
+.git{color: #60BF30;}
+.behance{color: #0057ff;}
+.codepen{color: #000;}
+/* -------------->> 3 sekcja <<----------------------*/
+
+.bg-3 {}
+
+
+
+
+
+
+/* -------------->> mapa <<----------------------*/
+
+#googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+.moje_logo {
+    border-radius: 100%;
+    width: 550px;
+    height: 450px;
+    border: 5px solid #fff;
+    box-shadow: 1px 1px 10px #000000;
+    animation: logo 3.5s;
+    background-color: #a1b8e1;
+    background-image: url(backpack.jpg);
+    background-size: cover;
+    
+
+}
+.moje_logo p{
+    display: none;
+    position: absolute;
+    margin: 10%;
+    background-color: rgb(0,0,0, 0.7);
+    border-radius: 15px;
+    color: #fff;
+    padding: 15px;
+}
+.moje_logo:hover p{
+    display: block;
+  
+}
+
+/* -------------->> footer <<----------------------*/
+
+footer{
+    background-color: #333;
+    padding-top: 300px;
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    
+}
+footer h1{
+    margin: 0;
+}
+footer h3{
+    margin: 0;
+    color: #dbdbdb;
+    font-family: 'Montserrat', sans-serif;
+}
+row{
+    background-color: rgb(0,0,0, 0.4);
+    padding-left: 5px;
+    padding-right: 5px;
+
+    display: grid;
+    place-items: center;
+}
+footer input{
+    background-color: #dbdbdb;
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+    
+    
+}
+footer button{
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------->> responsywność <<----------------------*/
+
+@media only screen and (max-width: 800px) {
+    .navbar-right ul{
+        display: none;
+         transition: all 2s linear;
+    }
+      .navbar-right i{
+        display: inline-block;
+           transition: all 2s linear;
+    }
+}
+
+
+/* -------------->> animacje <<----------------------*/
+
+.bg-1 p {
+    animation: mymove 3.5s;
+}
+
+.bg-1 h3 {
+    animation: mymove 2.7s;
+}
+
+@keyframes mymove {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes logo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
