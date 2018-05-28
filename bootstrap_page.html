@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <style>
+        .container-fluid {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .bg-1 {
+            background-color: #1abc9c;
+            color: #ffffff;	
+        }
+		.bg-1 img{
+			margin: 70px;
+			border: 5px solid #fff;
+		}
+		.bg-1 h1{
+			font-family: 'Roboto', sans-serif;
+			font-size: 3em;
+			letter-spacing: 2px;
+			font-weight: 700;
+		}
+        .bg-2 {
+            background-color: #333;
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #ffffff;
+            color: #555555;
+        }
+
+        /* ukrycie paska przewijania */
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+    </style>
+
+
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/font-awesome.min.css" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <div class="container-fluid bg-1 text-left" style="padding-top: 20px;">
+        <div class="col-sm-12"><a href="index.html" style="color: #fff;"><i class="fa fa-arrow-circle-left fa-4x" aria-hidden="true"></i></a></div>
+    </div>
+    <div class="container-fluid bg-1 text-center">
+        <h1> Kim ja karwa jestem?</h1>
+        <img src="backpack.jpg" class="img-circle" alt="Backpack" height="350px" width="450px">
+    </div>
+
+    <div class="container-fluid bg-2 text-center">
+        <h1>Witam</h1>
+        <p>Strona ma za zadanie przedstawiać... <strong>nic</strong></p>
+        <a href="#" class="btn btn-lg btn-default" data-toggle="tooltip" title="Ten przycisk nic nie robi zupełnie nic po prostu jest!"><span class="glyphicon glyphicon-search"></span> search</a>
+
+        <script>
+            $(document).ready(function() {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+
+        </script>
+
+
+    </div>
+
+    <div class="container-fluid bg-3 text-center">
+        <h1>-_|_-</h1>
+        <p>lil peep R.I.P</p>
+
+    </div>
+
+    <div class="container-fluid bg-3 text-center">
+        <h1>Moje ulubione filmy</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Manchester by the Sea</h3>
+                <img src="lee.png" class="img-responsive">
+                <hr>
+                <p>Po śmierci Joe'go (Kyle Chandler), starszego brata, Lee Chandler (Casey Affleck), zaszokowany wiadomością, że brat powierzył mu opiekę nad swoim synem Patrickiem (Lucas Hedges), wraca w rodzinne okolice. Lee rzuca wszystko i przenosi się do Manchester-by-the-Sea, zmuszony zmierzyć się z wydarzeniami przeszłości, które sprawiły, że rozstał się z żoną – Randi (Michelle Williams) i opuścił miasteczko, w którym wyrastał.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Dark Knight</h3>
+                <img src="joker.jpg" class="img-responsive">
+                <hr>
+                <p>W nowym filmie Batman podejmuje szeroko zakrojoną walkę z przestępczością. Z pomocą porucznika Jima Gordona i prokuratora okręgowego Harveya Denta zabiera się za rozpracowywanie istniejących organizacji przestępczych nękających mieszkańców miasta. Współpraca przynosi efekty, ale bohaterowie wkrótce padną ofiarą chaosu, który rozpęta rosnący w siłę <strong>genialny przestępca, znany przerażonym mieszkańcom Gotham jako Joker.</strong></p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Mechaniczna pomarańcza</h3>
+                <img src="pomarancza.jpg" class="img-responsive">
+                <hr>
+                <p>Niedaleka przyszłość. Historia grupy młodych chuliganów, którym przewodzi okrutny, zdemoralizowany i pozbawiony skrupułów miłośnik Beethovena, Alex (Malcolm McDowell). Skazany za brutalne zabójstwo, trafia na 14 lat do więzienia. Tam otrzymuje propozycję - poddanie się nowatorskiej terapii psychologicznej w zamian za wolność. Owa terapia polega na zmuszaniu pacjenta do oglądania krwawych i okrutnych scen przemocy. Po takim praniu mózgu Alex zmienia się w porządnego obywatela.</p>
+            </div>
+        </div>
+
+    </div>
+
+       <div class="container-fluid bg-1 text-center">
+        <div class="row">
+          <div class="col-sm-12">
+              <h1>Moje ulubione seriale<h6>/// w trakcie prac :{</h6></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-1 text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <h4>/// w trakcie prac</h4>
+
+            </div>
+            <div class="col-sm-4">
+                 <h4>/// w trakcie prac</h4>
+                
+            </div>
+            <div class="col-sm-4">
+                 <h4>/// w trakcie prac</h4>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-2 text-center">
+       <p>&copy; 2018</p>
+
+
+    </div>
+
+</body>
+
+</html>
