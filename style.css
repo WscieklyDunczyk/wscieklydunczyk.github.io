@@ -382,7 +382,7 @@ footer h3 {
         color: #fff;
         background-color: #4c4c4c;
         max-width: 100vw;
-       
+       height: 100vh;
     }
 
     nav.black ul {
@@ -393,7 +393,7 @@ footer h3 {
     .showing {
         max-height: 50em;
         max-width: 100%;
-      padding-right: 0;
+       padding-right: 0;
     }
 
     nav ul li {
@@ -401,7 +401,7 @@ footer h3 {
         width: 100%;
         display: grid;
         place-items: center;
-        height: 20vh;
+       
         text-align: center;
         color: #fff;
         
