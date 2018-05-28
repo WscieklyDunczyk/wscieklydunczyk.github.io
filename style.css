@@ -4,10 +4,11 @@
     src: url(https://hackedfont.com/HACKED.ttf);
 }
 */
+
 * {
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
-    box-sizing: border-box;
+   
 }
 
 ::-webkit-scrollbar {
@@ -22,77 +23,87 @@ body {
 
 /* -------------->> navbar <<--------------------- */
 
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 20px 46px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 20px;
+    transition: 1s;
+}
+
 nav {
     position: fixed;
     width: 100%;
-    padding: 25px;
-    box-sizing: border-box;
-    z-index: 9999;
-    background-color: #fff;
-    transition: 1s;
-    color: #000;
+    line-height: 60px;
+    z-index: 999;
 }
 
-.scroll {
-    background-color: rgb(0, 0, 0, 0.8);
-    transition: 1s;
-    padding: 10px;
-    color: #fff;
-
-}
-
-.navbar-left {
-    font-weight: 600;
-    letter-spacing: 4px;
-    padding: 1px;
-    float: left;
-    cursor: default;
-}
-
-.navbar-left-color {
-    color: #fff;
-}
-
-.navbar-right {
-    float: right;
-}
-.navbar-right i{
-    display: none;
-     transition: all 2s linear;
-}
-.navbar-right ul {
+nav ul {
+    line-height: 60px;
     list-style: none;
-    display: flex;
-     transition: all 2s linear;
+    overflow: hidden;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+      background: #fff;
+}
+.black{
+    transition: 0.5s;
+     animation: ease-in-out;
+}
+nav.black ul {
+        background-color: rgb(0, 0, 0, 0.8);
+    
+}
+nav.black ul li a{
+   color: #fff;
+    
+}
+nav.black .logo{
+    color: #fff;
+    margin: 5px 30px;
+    transition: 1s;
+}
+nav.black li{
+    padding: 5px 30px;
+    transition: 1s;
+}
+nav ul li {
+    display: inline-block;
+    padding: 20px 30px;
+    transition: 1s;
 }
 
-.navbar-right ul li {
-    margin-right: 25px;
-    letter-spacing: 1px;
-    font-weight: 400;
-}
-
-.navbar-right ul li a {
-    transition: 0.3s;
-    padding: 10px;
-    animation: ease;
-    text-transform: uppercase;
-}
-
-a {
+nav ul li a {
+     text-transform: uppercase;
+    text-decoration: none;
     color: #000;
+    padding: 10px;
+    transition: 0.6s;
 }
-
-.a-color {
-    color: #fff;
-}
-
-.navbar-right ul li a:hover {
-    transition: 0.4s;
-    color: #fff;
+nav ul li :hover{
     background-color: Tomato;
-    border-radius: 30px;
-    animation: ease;
+    border-radius: 15px;
+    color: #fff;
+    transition: 0.6s;
+    animation: ease-in-out;
+}
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
 }
 
 /* -------------->> 1 sekcja <<----------------------*/
@@ -115,7 +126,7 @@ a {
 .bg-1 h3 {
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 2px 2px 3px #000; 
+    text-shadow: 2px 2px 3px #000;
 }
 
 .bg-1 p {
@@ -161,13 +172,15 @@ a {
     text-align: center;
     line-height: 25px;
 }
-.flex-item h1{
+
+.flex-item h1 {
     text-shadow: 1px 1px 10px grey;
     font-family: 'Pacifico', cursive;
     font-size: 3em;
     color: #333;
     margin-top: 100px;
 }
+
 section {
     background-color: #eee;
     margin: 0;
@@ -182,8 +195,10 @@ section h1 {
     margin-top: 150px;
     text-align: center;
 }
+
 /* -------------->> ikony <<----------------------*/
-.box{
+
+.box {
     padding-left: 200px;
     padding-right: 200px;
     display: flex;
@@ -191,24 +206,51 @@ section h1 {
     justify-content: center;
     text-align: center;
 }
-.icon{
-    
+
+.icon {
+
     margin: 30px;
     display: inline-block;
     width: 100px;
 }
-i{transition: 0.5s;}
-.box a i:hover{
-    transform: scale(1.5,1.5);
+
+i {
     transition: 0.5s;
 }
-.html{color: Tomato;}
-.css{color: dodgerblue;}
-.js{color: #EDCF35;}
-.github{color: #333;}
-.git{color: #60BF30;}
-.behance{color: #0057ff;}
-.codepen{color: #000;}
+
+.box a i:hover {
+    transform: scale(1.5, 1.5);
+    transition: 0.5s;
+}
+
+.html {
+    color: Tomato;
+}
+
+.css {
+    color: dodgerblue;
+}
+
+.js {
+    color: #EDCF35;
+}
+
+.github {
+    color: #333;
+}
+
+.git {
+    color: #60BF30;
+}
+
+.behance {
+    color: #0057ff;
+}
+
+.codepen {
+    color: #000;
+}
+
 /* -------------->> 3 sekcja <<----------------------*/
 
 .bg-3 {}
@@ -238,26 +280,28 @@ i{transition: 0.5s;}
     background-color: #a1b8e1;
     background-image: url(backpack.jpg);
     background-size: cover;
-    
+
 
 }
-.moje_logo p{
+
+.moje_logo p {
     display: none;
     position: absolute;
     margin: 10%;
-    background-color: rgb(0,0,0, 0.7);
+    background-color: rgb(0, 0, 0, 0.7);
     border-radius: 15px;
     color: #fff;
     padding: 15px;
 }
-.moje_logo:hover p{
+
+.moje_logo:hover p {
     display: block;
-  
+
 }
 
 /* -------------->> footer <<----------------------*/
 
-footer{
+footer {
     background-color: #333;
     padding-top: 300px;
     padding-left: 500px;
@@ -266,12 +310,14 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
-    
+
 }
-footer h1{
+
+footer h1 {
     margin: 0;
 }
-footer h3{
+
+footer h3 {
     margin: 0;
     color: #dbdbdb;
     font-family: 'Montserrat', sans-serif;
@@ -294,16 +340,62 @@ footer h3{
 /* -------------->> responsywność <<----------------------*/
 
 @media only screen and (max-width: 800px) {
-    .navbar-right ul{
+    .navbar-right ul {
         display: none;
-         transition: all 2s linear;
+        transition: all 2s linear;
     }
-      .navbar-right i{
+    .navbar-right i {
         display: inline-block;
-           transition: all 2s linear;
+        transition: all 2s linear;
     }
 }
 
+
+
+
+
+@media(max-width: 786px) {
+
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+        color: #fff;
+        
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: #fff;
+        color: #fff;
+        background-color: #4c4c4c;
+    }
+
+    nav.black ul {
+        color: #fff;
+        
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+        color: #fff;
+        
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon {
+        display: block;
+    }
+
+}
 
 /* -------------->> animacje <<----------------------*/
 
@@ -334,3 +426,8 @@ footer h3{
         opacity: 1;
     }
 }
+
+
+
+
+
