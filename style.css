@@ -256,14 +256,6 @@ i {
     color: #000;
 }
 
-/* -------------->> 3 sekcja <<----------------------*/
-
-.bg-3 {}
-
-
-
-
-
 
 /* -------------->> mapa <<----------------------*/
 
@@ -401,7 +393,7 @@ footer h3 {
         box-sizing: border-box;
         width: 100%;
         display: grid;
-        place-items: center;
+        align-items: center;
        
         text-align: center;
         color: #fff;
