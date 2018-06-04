@@ -51,32 +51,34 @@ nav ul {
     padding: 0;
     text-align: right;
     margin: 0;
-    padding-right: 40px;
     transition: 0.75s;
     background: #fff;
-    
 }
-.black{
+
+.black {
     transition: 0.5s;
-     animation: ease-in-out;
+    animation: ease-in-out;
 }
+
 nav.black ul {
-        background-color: rgb(0, 0, 0, 0.8);
-    
+    background-color: rgb(0, 0, 0, 0.8);
 }
-nav.black ul li a{
-   color: #fff;
-    
+
+nav.black ul li a {
+    color: #fff;
 }
-nav.black .logo{
+
+nav.black .logo {
     color: #fff;
     margin: 5px 30px;
     transition: 1s;
 }
-nav.black li{
+
+nav.black li {
     padding: 5px 30px;
     transition: 1s;
 }
+
 nav ul li {
     display: inline-block;
     padding: 20px 30px;
@@ -84,20 +86,22 @@ nav ul li {
 }
 
 nav ul li a {
-     text-transform: uppercase;
+    text-transform: uppercase;
     text-decoration: none;
     color: #000;
     padding: 10px;
     transition: 0.6s;
     min-width: 250px;
 }
-nav ul li :hover{
+
+nav ul li :hover {
     background-color: Tomato;
     border-radius: 15px;
     color: #fff;
     transition: 0.6s;
     animation: ease-in-out;
 }
+
 .menu-icon {
     line-height: 60px;
     width: 100%;
@@ -113,7 +117,7 @@ nav ul li :hover{
 /* -------------->> 1 sekcja <<----------------------*/
 
 .bg-1 {
-    background-image: url(iphone.jpg);
+    background-image: url(working-at-night.jpg);
     background-size: cover;
     height: 100vh;
     margin: 0;
@@ -131,14 +135,14 @@ nav ul li :hover{
 .bg-1 h3 {
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 2px 2px 3px #000;
+    text-shadow: 1px 1px 5px #000;
 }
 
 .bg-1 p {
     text-transform: uppercase;
     font-size: 2em;
-    text-shadow: 2px 2px 3px #000;
     letter-spacing: 10px;
+    text-shadow: 1px 1px 5px #000;
 }
 
 /* -------------->> 2 sekcja <<----------------------*/
@@ -154,7 +158,6 @@ nav ul li :hover{
     max-width: 100%;
     transition: 1s;
 }
-
 
 .flex-item {
     padding-top: 10px;
@@ -212,7 +215,6 @@ section h1 {
 }
 
 .icon {
-
     margin: 30px;
     display: inline-block;
     width: 100px;
@@ -256,7 +258,6 @@ i {
     color: #000;
 }
 
-
 /* -------------->> mapa <<----------------------*/
 
 #googleMap {
@@ -265,7 +266,6 @@ i {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
-
 
 .moje_logo {
     border-radius: 100%;
@@ -277,8 +277,6 @@ i {
     background-color: #a1b8e1;
     background-image: url(backpack.jpg);
     background-size: cover;
-
-
 }
 
 .moje_logo p {
@@ -293,18 +291,14 @@ i {
 
 .moje_logo:hover p {
     display: block;
-
 }
 
 /* -------------->> footer <<----------------------*/
 
 footer {
     background-color: #333;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-    min-height: 100px;
     color: #fff;
+    padding: 35px;
 }
 
 footer h1 {
@@ -314,43 +308,53 @@ footer h1 {
 footer h3 {
     margin: 0;
     color: #dbdbdb;
-    
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1em;
+    /* grid-auto-rows:100px; */
+    grid-auto-rows: minmax(50px, auto);
+}
 
+.pole {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 70px;
+    grid-gap: 1em;
+}
 
+.pole input {
+    padding: 10px;
+    border: none;
+    font-size: 1em;
+    color: 999;
+}
 
-
-
-
-
-
-
-
-
-
-
+input:focus {
+    border: 2px solid red;
+}
 
 /* -------------->> responsywność <<----------------------*/
 
-
 @media only screen and (max-width: 786px) {
-    nav.black .logo{
+    nav.black .logo {
         margin-top: 16px;
         position: fixed;
     }
-    .bg-1{
+    .bg-1 {
         background-position: 50% 50%;
     }
-    .box{
+    .box {
         padding-left: 10px;
         padding-right: 10px;
     }
-    .flex-item{
+    .flex-item {
         padding-left: 10px;
         padding-right: 10px;
     }
-    .moje_logo{
+    .moje_logo {
         border-radius: 0;
         padding: 0;
         margin: 0;
@@ -364,9 +368,8 @@ footer h3 {
         top: 0;
         margin-top: 16px;
         color: #fff;
-        
     }
-    nav{
+    nav {
         max-width: 100vw;
     }
     nav ul {
@@ -375,31 +378,25 @@ footer h3 {
         color: #fff;
         background-color: #4c4c4c;
         max-width: 100vw;
-       height: 100vh;
+        height: 100vh;
     }
-
     nav.black ul {
         color: #fff;
-        
     }
-
     .showing {
         max-height: 50em;
         max-width: 100%;
-       padding-right: 0;
+        padding-right: 0;
     }
-
     nav ul li {
         box-sizing: border-box;
         width: 100%;
         display: grid;
-        align-items: center;
-       
+        place-content: center;
         text-align: center;
         color: #fff;
-        
     }
-    nav ul li a{
+    nav ul li a {
         color: #fff;
         padding: 0;
         min-width: 200px;
@@ -407,7 +404,6 @@ footer h3 {
     .menu-icon {
         display: inline-block;
     }
-
 }
 
 /* -------------->> animacje <<----------------------*/
@@ -423,7 +419,7 @@ footer h3 {
 @keyframes mymove {
     from {
         opacity: 0;
-        transform: translateX(-300px);
+        transform: translateY(-150px);
     }
     to {
         opacity: 1;
@@ -439,8 +435,3 @@ footer h3 {
         opacity: 1;
     }
 }
-
-
-
-
-
