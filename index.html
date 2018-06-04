@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta name="description" content="Portfolio | Sebastian Nowak | Frontend">
+    <meta name="keywords" content="portfolio, frontend, html, css, tworzenie stron internetowych">
+
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <link href="https://hackedfont.com/HACKED.ttf" rel="stylesheet" author="David Libeau">
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+</head>
+
+<body id="myPage">
+    <!----------------------------/// navbar ///-------------------- -->
+    <nav>
+
+        <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+        </div>
+
+        <div class="logo">
+            LOGO
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!----------------------------/// 1 sekcja ///------------------- -->
+    <div class="bg-1">
+
+        <h3>Sebastian Nowak</h3>
+        <p>frontend-developer</p>
+
+    </div>
+    <section></section>
+    <!----------------------------/// 2 sekcja ///------------------- -->
+    <div class="bg-2">
+        
+        <section>
+            <h1> O mnie </h1>
+        </section>
+        
+        <div class="container">
+
+            <div class="flex-item">
+                <h3> Kim jestem? </h3>
+                <p>Nazywam się Sebastian Nowak i od roku fascynuję się i zajmuję kodowaniem stron internetowych.</p>
+                <p>Obecnie całą swoją uwagę koncentruję na rozwoju umiejętności oraz poznawaniu nowych technologii, dzięki którym
+                    moje projekty będą jeszcze lepsze.</p>
+                <h1>Zapraszam do wsółpracy :) </h1>
+            </div>
+            <div class="flex-item">
+                <a href="bootstrap_page.html">
+                    <div class="moje_logo">
+                        <p>Kliknij żeby zobaczyć więcej</p>
+                    </div>
+                </a>
+            </div>
+       
+        </div>
+   
+    </div>
+    <div class="box">
+        <div class="html icon">
+            <i class="fab fa-html5 fa-7x"></i>
+        </div>
+        <div class="css icon">
+            <i class="fab fa-css3-alt fa-7x"></i>
+        </div>
+        <div class="js icon">
+            <i class="fab fa-js fa-7x"></i>
+        </div>
+        <a href="https://github.com/kollbe">
+            <div class="github icon link">
+                <i class="fab fa-github fa-7x"></i>
+            </div>
+        </a>
+        <div class="git icon">
+            <i class="fab fa-git-square fa-7x"></i>
+        </div>
+        <a href="https://www.behance.net/sebacs665c6b">
+            <div class="behance icon">
+                <i class="fab fa-behance-square fa-7x"></i>
+            </div>
+        </a>
+        <a href="https://codepen.io/fafluny/">
+            <div class="codepen icon">
+                <i class="fab fa-codepen fa-7x"></i>
+            </div>
+        </a>
+
+
+    </div>
+    <!--  Google Maps -->
+    <div id="googleMap"></div>
+
+    <!-- Footer -->
+    <footer id="kontakt">
+        <div class="wrapper">
+            <div></div>
+            <div class="pole">
+                <input type="text" placeholder="Twoja nazwa">
+                <input type="email" placeholder="Twój email">
+            </div>
+            <div> </div>
+
+        </div>
+        
+        <p>&copy; 2018</p>
+    </footer>
+
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(52.751897, 16.987988);
+            var mapProp = {
+                center: myCenter,
+                zoom: 12,
+                scrollwheel: false,
+                draggable: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({
+                position: myCenter
+            });
+            marker.setMap(map);
+        }
+    </script>
+    <script type="text/javascript">
+        // Menu-toggle button
+
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        // Scrolling Effect
+
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+
+            } else {
+                $('nav').removeClass('black');
+
+            }
+        })
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBejRhg9kElDr8VCkrNvPfgo-1sVHuA_VA&callback=myMap"></script>
+</body>
+
+</html>
