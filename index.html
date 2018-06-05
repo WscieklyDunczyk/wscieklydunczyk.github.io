@@ -2,22 +2,20 @@
 <html lang="pl-PL">
 
 <head>
-    <meta name="description" content="Portfolio | Sebastian Nowak | Frontend">
-    <meta name="keywords" content="portfolio, frontend, html, css, tworzenie stron internetowych">
+    <meta name="description" content="Portfolio | Sebastian Nowak | Frontend kollbe">
+    <meta name="keywords" content="portfolio, frontend, html, css, tworzenie stron internetowych, kollbe, github">
 
     <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
     <link href="https://hackedfont.com/HACKED.ttf" rel="stylesheet" author="David Libeau">
-
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <body id="myPage">
@@ -35,16 +33,16 @@
         <div class="menu">
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#">home</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#o_mnie">o mnie</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="#skills">umiejętności</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#kontakt">kontakt</a>
                 </li>
             </ul>
         </div>
@@ -59,7 +57,7 @@
         <p>frontend-developer</p>
 
     </div>
-    <section></section>
+    <section id="o_mnie" ></section>
     <!----------------------------/// 2 sekcja ///------------------- -->
     <div class="bg-2">
         
@@ -87,7 +85,7 @@
         </div>
    
     </div>
-    <div class="box">
+    <div id="skills" class="box">
         <div class="html icon">
             <i class="fab fa-html5 fa-7x"></i>
         </div>
@@ -119,19 +117,16 @@
 
     </div>
     <!--  Google Maps -->
-    <div id="googleMap"></div>
+    <div id="googleMap"> </div>
 
     <!-- Footer -->
     <footer id="kontakt">
-        <div class="wrapper">
-            <div></div>
-            <div class="pole">
+        <div class="container">
                 <input type="text" placeholder="Twoja nazwa">
                 <input type="email" placeholder="Twój email">
-            </div>
-            <div> </div>
-
         </div>
+       <textarea class="message" placeholder="Tu napisz swoją wiadomość :P "></textarea>
+                <button>Wyślij</button>
         
         <p>&copy; 2018</p>
     </footer>
