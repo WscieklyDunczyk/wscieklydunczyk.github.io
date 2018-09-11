@@ -1,0 +1,16 @@
+
+
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url(https://hackedfont.com/HACKED.ttf);
+}
+@font-face{
+    font-family: 'Roboto', sans-serif;
+    src: url(https://fonts.googleapis.com/css?family=Roboto);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
