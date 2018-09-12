@@ -15,4 +15,20 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #eee;
+}
+html,body{
+    background-color: #5a6cd6;
+}
+button,input{
+    padding: 10px 25px;
+    background-color: #3E4256;
+    border-radius: 15px;
+    border: solid 3px #333;
+    margin: 10px;
+    text-transform: uppercase;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 15px;
 }
