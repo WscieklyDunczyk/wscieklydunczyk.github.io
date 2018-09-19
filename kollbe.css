@@ -11,24 +11,34 @@
     src: url(https://fonts.googleapis.com/css?family=Roboto);
 }
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    color: #eee;
 }
-html,body{
-    background-color: #5a6cd6;
+html{
+    margin:0;
+    padding: 0;
+    background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+}
+body{
+    margin: 55px;
+    background-color: #ffffff;
+    border-radius: 35px;
+    box-shadow: 1px 1px 10px #333;
+    padding: 70px;  
 }
 button,input{
     padding: 10px 25px;
     background-color: #3E4256;
-    border-radius: 15px;
+    border-radius: 20px;
     border: solid 3px #333;
     margin: 10px;
     text-transform: uppercase;
 }
-h1,h2,h3,h4,h5,h6{
-    margin: 15px;
+h1,h2,h3,h4,h5,h6,p{
+    margin: 10px;
+}
+p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3em;
+    color: #333333;
 }
