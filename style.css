@@ -1,458 +1,377 @@
-
 @font-face {
-    font-family: Hacked;
-    src: url(https://hackedfont.com/HACKED.ttf);
+  font-family: Hacked;
+  src: url(https://hackedfont.com/HACKED.ttf);
 }
 
 * {
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-    box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 html,
 body {
-    background-color: #eee;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* -------------->> navbar <<--------------------- */
 
 .logo {
-    line-height: 60px;
-    position: fixed;
-    float: left;
-    margin: 20px 46px;
-    color: #000;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 20px;
-    transition: 1s;
+  position: fixed;
+  float: left;
+  margin: 0px 30px;
+  color: #dbdbdb;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: default;
 }
 
 nav {
-    position: fixed;
-    width: 100%;
-    line-height: 60px;
-    z-index: 999;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 nav ul {
-    line-height: 60px;
-    list-style: none;
-    overflow: hidden;
-    padding: 0;
-    text-align: right;
-    margin: 0;
-    transition: 0.75s;
-    background: #fff;
+  line-height: 60px;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  transition: 0.75s;
+  background: rgb(0, 0, 0, 0);
 }
 
 .black {
-    transition: 0.5s;
-    animation: ease-in-out;
+  transition: 0.5s;
+  animation: ease-in-out;
 }
 
 nav.black ul {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(238, 238, 238, 0.7);
 }
 
 nav.black ul li a {
-    color: #fff;
+  color: #333;
 }
 
 nav.black .logo {
-    color: #fff;
-    margin: 5px 30px;
-    transition: 1s;
+  color: #333;
 }
 
 nav.black li {
-    padding: 5px 30px;
-    transition: 1s;
+  transition: 1s;
 }
 
 nav ul li {
-    display: inline-block;
-    padding: 20px 30px;
-    transition: 1s;
+  display: inline-block;
+  padding: 0px 15px;
+  transition: 1s;
 }
 
 nav ul li a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000;
-    padding: 10px;
-    transition: 0.6s;
-    min-width: 250px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #dbdbdb;
+  padding: 10px;
+  transition: 0.6s;
+  min-width: 250px;
+  font-weight: bold;
 }
 
-nav ul li :hover {
-    background-color: Tomato;
-    border-radius: 15px;
-    color: #fff;
-    transition: 0.6s;
-    animation: ease-in-out;
+nav ul li a:hover {
+  background-color: Tomato;
+  color: #fff;
+  transition: 0.6s;
+  animation: ease-out;
 }
 
 .menu-icon {
-    line-height: 60px;
-    width: 100%;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    cursor: pointer;
-    color: #fff;
-    display: none;
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #fff;
+  display: none;
 }
 
 /* -------------->> 1 sekcja <<----------------------*/
 
 .bg-1 {
-    background-image: url(working-at-night.jpg);
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #eee;
-    background-attachment: fixed;
-    cursor: default;
-    width: 100%;
+  background-image: url(working-at-night.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #eee;
+  background-attachment: fixed;
+  cursor: default;
+  width: 100%;
 }
 
 .bg-1 h3 {
-    font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: 1px 1px 5px #000;
+  font-size: 1.2em;
+  margin: 0;
 }
 
 .bg-1 p {
-    text-transform: uppercase;
-    font-size: 2em;
-    letter-spacing: 10px;
-    text-shadow: 1px 1px 5px #000;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  margin: 0;
 }
 
 /* -------------->> 2 sekcja <<----------------------*/
 
 .bg-2 {
-    cursor: default;
+  cursor: default;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-    transition: 1s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  transition: 1s;
+  margin: 100px 0 50px 0;
 }
 
 .flex-item {
-    padding-top: 10px;
-    padding-bottom: 50px;
-    text-align: center;
-    max-width: 700px;
-    transition: 1s;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  text-align: center;
+  max-width: 700px;
+  transition: 1s;
+  margin: auto;
 }
-
 .flex-item h3 {
-    color: grey;
-    font-size: 1.5em;
-    margin-bottom: 50px;
+  color: grey;
+  font-size: 1.5em;
 }
-
 .flex-item p {
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-    text-align: center;
-    line-height: 25px;
-}
-
-.flex-item h1 {
-    text-shadow: 1px 1px 10px grey;
-    font-family: 'Pacifico', cursive;
-    font-size: 3em;
-    color: #333;
-    margin-top: 100px;
-}
-
-section {
-    background-color: #eee;
-    margin: 0;
-    text-align: center;
-}
-
-section h1 {
-    text-shadow: 1px 1px 10px grey;
-    font-family: 'Pacifico', cursive;
-    font-size: 5em;
-    color: #333;
-    margin-top: 150px;
-    text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  text-align: center;
+  line-height: 25px;
 }
 
 /* -------------->> ikony <<----------------------*/
 
 .box {
-    padding-left: 200px;
-    padding-right: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+  padding: 0 100px;
+  margin: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .icon {
-    margin: 30px;
-    display: inline-block;
-    width: 100px;
+  margin: 30px;
+  display: inline-block;
+  justify-content: center;
 }
 
 i {
-    transition: 0.5s;
-    margin: 16px;
+  transition: 0.5s;
 }
 
 .box a i:hover {
-    transform: scale(1.5, 1.5);
-    transition: 0.5s;
+  transform: scale(1.5, 1.5);
+  transition: 0.5s;
 }
 
 .html {
-    color: Tomato;
+  color: Tomato;
 }
 
 .css {
-    color: dodgerblue;
+  color: dodgerblue;
 }
 
 .js {
-    color: #EDCF35;
+  color: #edcf35;
 }
 
 .github {
-    color: #333;
+  color: #333;
 }
 
 .git {
-    color: #60BF30;
+  color: #60bf30;
 }
 
 .behance {
-    color: #0057ff;
+  color: #0057ff;
 }
 
 .codepen {
-    color: #000;
+  color: #000;
 }
 
 /* -------------->> mapa <<----------------------*/
 
 #googleMap {
-    width: 100%;
-    height: 400px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    margin: 0;
+  width: 100%;
+  height: 400px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  margin: 0;
 }
 
 .moje_logo {
-    border-radius: 100%;
-    width: 550px;
-    height: 450px;
-    border: 5px solid #fff;
-    box-shadow: 1px 1px 10px #000000;
-    animation: logo 3.5s;
-    background-color: #a1b8e1;
-    background-image: url(backpack.jpg);
-    background-size: cover;
+  border-radius: 100%;
+  width: 600px;
+  height: 450px;
+  border: 5px solid #fff;
+  box-shadow: 1px 1px 10px #000000;
+  animation: logo 3.5s;
+  background-color: #a1b8e1;
+  background-image: url(backpack.jpg);
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .moje_logo p {
-    display: none;
-    position: absolute;
-    margin: 10%;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 15px;
-    color: #fff;
-    padding: 15px;
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  color: #fff;
+  padding: 15px;
 }
 
 .moje_logo:hover p {
-    display: block;
+  display: block;
 }
 
 /* -------------->> footer <<----------------------*/
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding-top: 70px;
-    display: grid;
-    place-items: center;
-}
-footer .container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-}
-input {
-    padding: 10px;
-    border: 2px solid #333;
-    font-size: 1em;
-    color: #333;
-    margin: 10px;
-    outline: none;
-    min-width: 45%;
-    border-radius: 10px;
-}
-.message{
-    padding: 10px;
-    border: 2px solid #333;
-    font-size: 1em;
-    color: #333;
-    margin: 20px;
-    outline: none;
-    min-width: 60%;
-    height: 400px;
-    border-radius: 10px;
-}
-.message:focus{
-    border: 2px solid rgb(216, 73, 73);
-}
-input:focus {
-    border: 2px solid rgb(216, 73, 73);
-}
-button{
-    width: 200px;
-    margin: 30px;
-    background-color: Tomato;
-    border: 1px solid rgb(0,0,0, .1);
-    padding: 15px;
-    width: 200px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 20px;
-    outline: none;
-}
-button:active{
-    border: 1px solid #dbdbdb;
-    
+  background-color: #333;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  padding: 25px 50px;
 }
 /* -------------->> responsywność <<----------------------*/
 
 @media only screen and (max-width: 786px) {
-    nav.black .logo {
-        margin-top: 16px;
-        position: fixed;
-    }
-    .bg-1 {
-        background-position: 50% 50%;
-    }
-    .box {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .flex-item {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .moje_logo {
-        border-radius: 0;
-        padding: 0;
-        margin: 0;
-        border: none;
-        box-shadow: none;
-        max-width: 100vw;
-        background-position: 20% 50%;
-    }
-    .logo {
-        position: fixed;
-        top: 0;
-        margin-top: 16px;
-        color: #fff;
-    }
-    nav {
-        max-width: 100vw;
-    }
-    nav ul {
-        max-height: 0px;
-        background: #fff;
-        color: #fff;
-        background-color: #4c4c4c;
-        max-width: 100vw;
-        height: 100vh;
-    }
-    nav.black ul {
-        color: #fff;
-    }
-    .showing {
-        max-height: 50em;
-        max-width: 100%;
-        padding-right: 0;
-    }
-    nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        display: grid;
-        place-content: center;
-        text-align: center;
-        color: #fff;
-    }
-    nav ul li a {
-        color: #fff;
-        padding: 0;
-        min-width: 200px;
-    }
-    .menu-icon {
-        display: inline-block;
-    }
-    i{
-        transform: scale(0.5, 0.5);
-    }
-    .icon{
-        margin: 5px;
-    }
+  nav.black .logo {
+    color: #333;
+  }
+  .bg-1 {
+    background-position: 50% 50%;
+  }
+  .box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .flex-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .moje_logo {
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    max-width: 100vw;
+  }
+  .logo {
+    position: fixed;
+    top: 0;
+    color: #333;
+  }
+  nav {
+    max-width: 100vw;
+    background-color: rgb(238, 238, 238, 0.7);
+  }
+  nav ul {
+    max-height: 0px;
+    background: #fff;
+    color: #fff;
+    background-color: rgb(238, 238, 238, 1);
+    max-width: 100vw;
+    height: 100vh;
+  }
+  nav.black ul {
+    color: #fff;
+  }
+  .showing {
+    max-height: 50em;
+    max-width: 100%;
+    padding-right: 0;
+  }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  nav ul li a {
+    color: #333;
+    padding: 0;
+    min-width: 200px;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  .menu-icon i {
+    color: #333;
+  }
+  i {
+    transform: scale(0.5, 0.5);
+    margin: 15px;
+  }
+  .icon {
+    margin: 5px;
+  }
 }
 
 /* -------------->> animacje <<----------------------*/
 
 .bg-1 p {
-    animation: mymove 3.5s;
+  animation: mymove 2s;
 }
 
 .bg-1 h3 {
-    animation: mymove 2.7s;
+  animation: mymove 2s;
 }
 
 @keyframes mymove {
-    from {
-        opacity: 0;
-        transform: translateY(-150px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @keyframes logo {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
