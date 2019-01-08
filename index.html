@@ -15,7 +15,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
-<body id="myPage">
+<body>
   <!-- --------------------------/// navbar ///-------------------- -->
   <nav>
     <div class="menu-icon"><i class="fa fa-bars fa-2x"></i></div>
@@ -28,8 +28,8 @@
   </nav>
   <!-- --------------------------/// 1 sekcja ///------------------- -->
   <div class="bg-1">
-    <h3>Sebastian Nowak</h3>
-    <p>Webdeveloper</p>
+    <h1>webdeveloper</h1>
+    <p>Sebastian Nowak</p>
   </div>
   <!-- --------------------------/// 2 sekcja ///------------------- -->
   <div class="bg-2">
@@ -78,45 +78,7 @@
     <p>email: pacz_to@pacz.to</p>
     <p>&copy; 2018</p>
   </footer>
-  <script>
-    function myMap() {
-      var myCenter = new google.maps.LatLng(52.751897, 16.987988);
-      var mapProp = {
-        center: myCenter,
-        zoom: 12,
-        scrollwheel: false,
-        draggable: true,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(
-        document.getElementById("googleMap"),
-        mapProp
-      );
-      var marker = new google.maps.Marker({
-        position: myCenter
-      });
-      marker.setMap(map);
-    }
-  </script>
-  <script type="text/javascript">
-    // Menu-toggle button
-
-    $(document).ready(function () {
-      $(".menu-icon").on("click", function () {
-        $("nav ul").toggleClass("showing");
-      });
-    });
-
-    // Scrolling Effect
-
-    $(window).on("scroll", function () {
-      if ($(window).scrollTop()) {
-        $("nav").addClass("black");
-      } else {
-        $("nav").removeClass("black");
-      }
-    });
-  </script>
+  <script src="script.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBejRhg9kElDr8VCkrNvPfgo-1sVHuA_VA&callback=myMap"></script>
 </body>
 

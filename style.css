@@ -56,7 +56,7 @@ nav ul {
 }
 
 nav.black ul {
-  background-color: rgb(238, 238, 238, 0.7);
+  background-color: rgb(238, 238, 238, 1);
 }
 
 nav.black ul li a {
@@ -90,7 +90,7 @@ nav ul li a {
 nav ul li a:hover {
   background-color: Tomato;
   color: #fff;
-  transition: 0.6s;
+  transition: 0.5s;
   animation: ease-out;
 }
 
@@ -121,14 +121,12 @@ nav ul li a:hover {
   width: 100%;
 }
 
-.bg-1 h3 {
-  font-size: 1.2em;
+.bg-1 h1 {
+  text-transform: uppercase;
   margin: 0;
 }
 
 .bg-1 p {
-  text-transform: uppercase;
-  font-size: 2.5em;
   margin: 0;
 }
 
@@ -143,26 +141,25 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
-  transition: 1s;
   margin: 100px 0 50px 0;
 }
 
 .flex-item {
   padding-top: 10px;
   padding-bottom: 50px;
-  text-align: center;
+  text-align: left;
   max-width: 700px;
-  transition: 1s;
   margin: auto;
 }
+
 .flex-item h3 {
   color: grey;
   font-size: 1.5em;
 }
+
 .flex-item p {
   font-family: "Montserrat", sans-serif;
   color: #333;
-  text-align: center;
   line-height: 25px;
 }
 
@@ -268,40 +265,43 @@ footer {
   place-items: center;
   padding: 25px 50px;
 }
+
 /* -------------->> responsywność <<----------------------*/
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 800px) {
   nav.black .logo {
     color: #333;
   }
   .bg-1 {
     background-position: 50% 50%;
+    height: 50vh;
   }
+
   .box {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
+
   .flex-item {
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .moje_logo {
-    border-radius: 0;
-    padding: 0;
-    margin: 0;
-    border: none;
-    box-shadow: none;
-    max-width: 100vw;
+    display: none;
   }
+
   .logo {
     position: fixed;
     top: 0;
     color: #333;
   }
+
   nav {
     max-width: 100vw;
     background-color: rgb(238, 238, 238, 0.7);
   }
+
   nav ul {
     max-height: 0px;
     background: #fff;
@@ -310,14 +310,17 @@ footer {
     max-width: 100vw;
     height: 100vh;
   }
+
   nav.black ul {
     color: #fff;
   }
+
   .showing {
     max-height: 50em;
     max-width: 100%;
     padding-right: 0;
   }
+
   nav ul li {
     box-sizing: border-box;
     width: 100%;
@@ -326,21 +329,26 @@ footer {
     text-align: center;
     color: #fff;
   }
+
   nav ul li a {
     color: #333;
     padding: 0;
     min-width: 200px;
   }
+
   .menu-icon {
     display: inline-block;
   }
+
   .menu-icon i {
     color: #333;
   }
+
   i {
-    transform: scale(0.5, 0.5);
-    margin: 15px;
+    transform: scale(0.75, 0.75);
+    margin: 12px;
   }
+
   .icon {
     margin: 5px;
   }
@@ -352,7 +360,7 @@ footer {
   animation: mymove 2s;
 }
 
-.bg-1 h3 {
+.bg-1 h1 {
   animation: mymove 2s;
 }
 
@@ -361,6 +369,7 @@ footer {
     opacity: 0;
     transform: translateY(-100px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0px);
@@ -371,6 +380,7 @@ footer {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
