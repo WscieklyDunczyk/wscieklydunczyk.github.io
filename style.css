@@ -145,11 +145,13 @@ nav ul li a:hover {
 }
 
 .flex-item {
-  padding-top: 10px;
-  padding-bottom: 50px;
+  display: grid;
   text-align: left;
-  max-width: 700px;
-  margin: auto;
+  max-width: 750px;
+  padding: 50px;
+  justify-items: center;
+  align-content: center;
+  
 }
 
 .flex-item h3 {
