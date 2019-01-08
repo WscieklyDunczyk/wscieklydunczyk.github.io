@@ -115,7 +115,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #eee;
+  color: #fff;
   background-attachment: fixed;
   cursor: default;
   width: 100%;
