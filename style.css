@@ -1,8 +1,3 @@
-@font-face {
-  font-family: Hacked;
-  src: url(https://hackedfont.com/HACKED.ttf);
-}
-
 * {
   text-decoration: none;
   font-family: "Ubuntu", sans-serif;
@@ -245,19 +240,6 @@ i {
   align-items: center;
 }
 
-.moje_logo p {
-  display: none;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
-  color: #fff;
-  padding: 15px;
-}
-
-.moje_logo:hover p {
-  display: block;
-}
-
 /* -------------->> footer <<----------------------*/
 
 footer {
@@ -276,17 +258,21 @@ footer {
   }
   .bg-1 {
     background-position: 50% 50%;
-    height: 50vh;
+    height: 70vh;
   }
 
   .box {
     padding-left: 0px;
     padding-right: 0px;
   }
-
+  .image{
+    display: none;
+  }
+  .container{
+    margin: 25px 0px 10px 0px;
+  }
   .flex-item {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
   }
 
   .moje_logo {
