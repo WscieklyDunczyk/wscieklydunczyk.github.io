@@ -101,7 +101,7 @@ nav ul li a:hover {
 /* -------------->> 1 sekcja <<----------------------*/
 
 .bg-1 {
-  background-image: url(working-at-night.jpg);
+  background-image: url(/images/working-at-night.jpg);
   background-size: cover;
   height: 100vh;
   margin: 0;
@@ -150,7 +150,7 @@ nav ul li a:hover {
 }
 
 .flex-item h3 {
-  color: grey;
+  color: #333;
   font-size: 1.5em;
 }
 
@@ -160,8 +160,6 @@ nav ul li a:hover {
   line-height: 25px;
 }
 
-/* -------------->> ikony <<----------------------*/
-
 .box {
   padding: 0 100px;
   margin: 100px 0;
@@ -170,7 +168,43 @@ nav ul li a:hover {
   justify-content: center;
   text-align: center;
 }
+.card {
+  width: 400px;
+  margin: 25px;
+  border: 1px solid #d3d3d3;
+  border-radius: .25rem;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  transition: all .3s ease;
+}
+.card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(50,50,93,.1), 0 5px 16px rgba(0,0,0,.08);
 
+}
+.bg-img {
+  background-size: cover;
+  min-height: 200px;
+}
+.content {
+  background-color: #333;
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.content a{
+    color: #fff;
+}
+.pwa{
+  background-image: url(images/pwa.PNG);
+}
+.blog{
+  background-image: url(images/blog.PNG);
+}
+.kalkulator{
+  background-image: url(images/kalkulator.PNG);
+}
+.layout{
+  background-image: url(images/layout.PNG);
+}
 .icon {
   margin: 30px;
   display: inline-block;
@@ -228,11 +262,11 @@ i {
   border-radius: 100%;
   width: 600px;
   height: 450px;
-  border: 5px solid #fff;
-  box-shadow: 1px 1px 10px #000000;
+  border: 5px solid #333;
+  
   animation: logo 3.5s;
   background-color: #a1b8e1;
-  background-image: url(backpack.jpg);
+  background-image: url(/images/backpack.jpg);
   background-size: cover;
 
   display: flex;
